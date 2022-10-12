@@ -32,8 +32,9 @@ header {
 
 /*main section styles*/
 
-#char.nav{
-    text-align: center; background-color: black;
+#character-nav{
+    text-align: center; 
+    background-color: rgb(56, 1, 1);
 
 }
 
@@ -67,8 +68,8 @@ article h3{
 article p{
 width: 80%;
 font-size: 18px;
-line-height: 1.2;
-text-align: inherit;
+line-height: 2;
+text-align: center;
 margin: 0 auto;
 }
 
