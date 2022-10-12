@@ -1,7 +1,7 @@
 * {
     border: none;
-    padding: 0;
-    margin: 20;
+    padding: 5px;
+    margin: 5px ;
     box-sizing: border-box; 
 }
 
@@ -32,9 +32,16 @@ header {
 
 /*main section styles*/
 
-#char.nav{
-    text-align: center; background-color: black;
+#character-nav{
+    text-align: center; 
+    background-color: rgb(139, 101, 101);
 
+    /* add a background image to the nav element */
+    background-image: url('../images/marvelspread.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-blend-mode: overlay;
 }
 
 .char {
@@ -42,8 +49,55 @@ header {
     transition: .3s;
 }
 
+.char li h5 {
+    padding:  14px 8px;
+}
+
 .char li {
     display: inline-block;
+    height: 294px;
+    margin: 10px 8px;
+
+    background-color: black;
+    text-align: left;
+    overflow: hidden;
+}
+
+.sprites {
+    width: 224px;
+    height: 224px;
+
+    background-image: url('../images/marvelSprites.jpg');
+}
+
+.sprites:hover {
+    background-position-y: -224px !important;
+    transition: .4s;
+}
+
+#carol {
+    background-position: -224px 0;
+}
+
+#clint {
+    background-position: -448px 0;
+}
+
+#hulk {
+    background-position: -672px 0;
+}
+
+#thor {
+    background-position: -896px 0;
+}
+
+#widow {
+    background-position: -1120px 0;
+}
+
+.red-bumper {
+    height: 6px;
+    background-color: red;
 }
 
 .char li img{
@@ -51,7 +105,7 @@ header {
 }
 
 .char li img:hover{
-    transform: scale(1.2);
+    transform:scale(1.2);
 }
 
 article {
